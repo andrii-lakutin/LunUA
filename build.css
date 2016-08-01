@@ -1,0 +1,605 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+select,
+input {
+  font: inherit;
+}
+body {
+  background: #fff;
+}
+body {
+  background: #f5f5f5;
+  font: 600 15px Open Sans, sans-serif;
+  width: 100%;
+  height: 100%;
+}
+input::-webkit-input-placeholder {
+  color: #bbb;
+  text-indent: 5px;
+  transition: text-indent 500ms cubic-bezier(0.87, -0.41, 0.19, 1.441);
+}
+input::-moz-placeholder {
+  color: #bbb;
+  text-indent: 5px;
+  transition: text-indent 500ms cubic-bezier(0.87, -0.41, 0.19, 1.441);
+}
+input:-moz-placeholder {
+  color: #bbb;
+  text-indent: 5px;
+  transition: text-indent 500ms cubic-bezier(0.87, -0.41, 0.19, 1.441);
+}
+input:-ms-input-placeholder {
+  color: #bbb;
+  text-indent: 5px;
+  transition: text-indent 500ms cubic-bezier(0.87, -0.41, 0.19, 1.441);
+}
+input:focus::-webkit-input-placeholder {
+  color: #bbb;
+  text-indent: 300px;
+}
+input:focus::-moz-placeholder {
+  color: #bbb;
+  text-indent: 300px;
+}
+input:focus:-moz-placeholder {
+  color: #bbb;
+  text-indent: 300px;
+}
+input:focus:-ms-input-placeholder {
+  color: #bbb;
+  text-indent: 300px;
+}
+.display-none {
+  display: none !important;
+}
+.display-block {
+  display: block !important;
+}
+.active-color {
+  color: #000 !important;
+}
+.complete-color {
+  color: #ff9800 !important;
+}
+.invalid {
+  border: 1px solid #f00 !important;
+}
+.chosen {
+  -webkit-box-shadow: inset 0px 0px 0px 3px #ff9800 !important;
+  -moz-box-shadow: inset 0px 0px 0px 3px #ff9800 !important;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+}
+.NumNavigation {
+  margin: 0px auto;
+  margin-top: 120px;
+  width: 300px;
+}
+@media screen and (max-width: 1242px) {
+  .NumNavigation {
+    margin-top: 80px;
+  }
+}
+.NumNavigation input {
+  background: #fff;
+  border: none;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+  border-radius: 2px;
+  color: #bbb;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  cursor: pointer;
+  outline: none;
+}
+.NumNavigation :first-child {
+  margin-left: 0px;
+}
+.PrevNext {
+  margin: 0 auto;
+  width: 300px;
+}
+.PrevNext input {
+  background: #fff;
+  border: none;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+  border-radius: 2px;
+  width: 142px;
+  height: 40px;
+  color: #ff9800;
+  cursor: pointer;
+  outline: none;
+}
+.PrevNext input:nth-child(2) {
+  float: right;
+}
+.PrevNext :last-child {
+  display: none;
+  color: #fff;
+  background: #ff9800;
+  float: right;
+}
+.Step1 {
+  width: 300px;
+  margin: 0 auto;
+}
+.Step1 legend {
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+.Step1 input {
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+  border-radius: 2px;
+  width: 90%;
+  border: none;
+  padding: 15px;
+  outline: none;
+}
+.Step1 input[type="email"] {
+  margin-bottom: 150px;
+  margin-top: 16px;
+}
+.Step1 form {
+  position: relative;
+}
+.Step1 .er {
+  display: none;
+  width: 400px;
+  position: absolute;
+  color: #f00;
+}
+@media screen and (max-width: 1079px) {
+  .Step1 .er {
+    width: 300px;
+  }
+}
+.Step1 .nameErrors {
+  top: 75px;
+  right: -420px;
+}
+@media screen and (max-width: 1079px) {
+  .Step1 .nameErrors {
+    top: 200px;
+    right: 0px;
+  }
+}
+.Step1 .mailErrors {
+  top: 140px;
+  right: -420px;
+}
+@media screen and (max-width: 1079px) {
+  .Step1 .mailErrors {
+    top: 230px;
+    right: 0px;
+  }
+}
+.Step2 {
+  width: 300px;
+  margin: 0 auto;
+}
+.Step2 legend {
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+.Step2 select {
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+  border-radius: 2px;
+  border: none;
+  width: 100%;
+  padding: 15px;
+  color: #bbb;
+  -webkit-appearance: none;
+  cursor: pointer;
+  outline: none;
+}
+.Step2 select[name="country"] {
+  margin-bottom: 16px;
+}
+.Step2 select[name="city"] {
+  margin-bottom: 150px;
+}
+.Step2 .selectWrap {
+  position: relative;
+}
+.Step2 .selectWrap i {
+  color: #e3e3e3;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.Step2 .selectWrap .er {
+  display: none;
+  position: absolute;
+  color: #f00;
+  width: 400px;
+}
+@media screen and (max-width: 1079px) {
+  .Step2 .selectWrap .er {
+    width: 300px;
+  }
+}
+.Step2 .selectWrap .errorCountry {
+  top: 15px;
+  right: -420px;
+}
+@media screen and (max-width: 1079px) {
+  .Step2 .selectWrap .errorCountry {
+    top: 150px;
+    right: 0px;
+  }
+}
+.Step2 .selectWrap .errorCity {
+  top: 15px;
+  right: -420px;
+}
+@media screen and (max-width: 1079px) {
+  .Step2 .selectWrap .errorCity {
+    top: 83px;
+    right: 0px;
+  }
+}
+.Step3 {
+  width: 600px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 771px) {
+  .Step3 {
+    width: 300px;
+  }
+}
+.Step3 form {
+  margin-bottom: 66px;
+}
+.Step3 .row {
+  height: 50px;
+  width: 100%;
+}
+@media screen and (max-width: 771px) {
+  .Step3 .row {
+    height: 70px;
+  }
+}
+.Step3 legend {
+  margin-top: 16px;
+  margin-bottom: 40px;
+  margin-left: 150px;
+}
+@media screen and (max-width: 771px) {
+  .Step3 legend {
+    margin-left: 0px;
+  }
+}
+.Step3 label {
+  cursor: pointer;
+  line-height: 30px;
+}
+@media screen and (max-width: 771px) {
+  .Step3 label {
+    line-height: 15px;
+  }
+}
+.Step3 input[type="checkbox"] {
+  margin-left: 150px;
+  background: #fff;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+}
+.Step3 input[type="checkbox"]:after {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  color: #fff;
+  border-radius: 2px;
+  border: 1px solid #b8b8b8;
+  display: inline-block;
+  visibility: visible;
+  transition: all 300ms;
+}
+.Step3 input[type="checkbox"]:checked:after {
+  content: "✔";
+  top: 0px;
+  left: 0px;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 10px;
+  text-indent: 2px;
+  line-height: 11px;
+  border: none;
+  color: #fff;
+  background: #3b99fc;
+}
+@media screen and (max-width: 771px) {
+  .Step3 input[type="checkbox"] {
+    margin-left: 0px;
+    float: left;
+  }
+}
+.Step3 input[type="text"] {
+  background: #fff;
+  border: none;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+  border-radius: 2px;
+  display: none;
+  float: right;
+  width: 265px;
+  padding: 5px;
+  padding-left: 10px;
+  outline: none;
+}
+@media screen and (max-width: 771px) {
+  .Step3 input[type="text"] {
+    float: left;
+  }
+}
+.Step3 .ShowPattern {
+  display: none;
+  margin-left: 150px;
+  color: #f00;
+}
+@media screen and (max-width: 771px) {
+  .Step3 .ShowPattern {
+    margin-left: 0px;
+  }
+}
+.Step4 {
+  width: 740px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 771px) {
+  .Step4 {
+    width: 300px;
+  }
+}
+.Step4 form {
+  margin-bottom: 60px;
+}
+.Step4 legend {
+  margin-top: 16px;
+  margin-bottom: 40px;
+  margin-left: 215px;
+}
+@media screen and (max-width: 771px) {
+  .Step4 legend {
+    margin-left: 0px;
+  }
+}
+.Step4 .animals {
+  border-radius: 2px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  margin: 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+@media screen and (max-width: 771px) {
+  .Step4 .animals {
+    margin: 0px;
+  }
+}
+.Step4 p {
+  display: none;
+  margin-left: 16px;
+  color: #f00;
+}
+@media screen and (max-width: 771px) {
+  .Step4 p {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
+#cat1 {
+  background-image: url("images/cat1.jpg");
+  background-position: 45% 0%;
+}
+#cat2 {
+  background-image: url("images/cat2.jpg");
+  background-position: 30% 0%;
+}
+#cat3 {
+  background-image: url("images/cat3.jpg");
+  background-position: 70% 0%;
+}
+#dog4 {
+  background-image: url("images/dog4.jpg");
+  background-size: 210%;
+  background-position: 58% 0%;
+}
+.Result {
+  overflow: hidden;
+}
+.Result .card {
+  width: 500px;
+  height: 195px;
+  padding: 25px;
+  margin: 150px auto;
+  margin-bottom: 32px;
+  background: #fff;
+}
+@media screen and (max-width: 675px) {
+  .Result .card {
+    transform: rotate(-90deg) translateY(-110px);
+    margin: 200px auto;
+  }
+}
+.Result .card h1 {
+  font-size: 20px;
+  width: 275px;
+}
+.Result .card p {
+  color: #6b6a6a;
+  width: 275px;
+  word-wrap: break-word;
+}
+.Result .card p:nth-child(3) {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+.Result .card p:nth-child(4) {
+  margin-bottom: 5px;
+}
+.Result .card span {
+  display: inline-block;
+  vertical-align: bottom;
+}
+.Result .card span:nth-of-type(2n+1) {
+  color: #5249cb;
+}
+.Result .card .table {
+  height: 80px;
+  display: table-cell;
+  vertical-align: bottom;
+}
+.Result .card .img {
+  height: 195px;
+  width: 200px;
+  float: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Result input {
+  background: #fff;
+  border: none;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+  border-radius: 2px;
+  width: 142px;
+  height: 40px;
+  color: #fff;
+  background: #ff9800;
+  display: block;
+  cursor: pointer;
+  outline: none;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 675px) {
+  .Result input {
+    margin-top: 200px;
+  }
+}

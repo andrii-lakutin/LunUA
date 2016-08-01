@@ -1,0 +1,79 @@
+body
+	background #f5f5f5
+	font 600 15px Open Sans, sans-serif  
+	width 100% 
+	height 100% 
+	
+unactive = #bbbbbb
+// Стилизация placeholder в input
+
+input-placeholder-styles(){
+	color #bbbbbb
+	text-indent 5px
+	transition text-indent 500ms cubic-bezier(.87,-.41,.19,1.441)
+} 
+
+input-placeholder-focus(){
+	color unactive
+	text-indent 300px
+} 
+
+input
+	&::-webkit-input-placeholder
+		input-placeholder-styles()
+	&::-moz-placeholder
+		input-placeholder-styles()
+	&:-moz-placeholder
+		input-placeholder-styles()
+	&:-ms-input-placeholder
+		input-placeholder-styles()
+		
+input
+	&:focus
+		&::-webkit-input-placeholder
+			input-placeholder-focus()
+		&::-moz-placeholder
+			input-placeholder-focus()
+		&:-moz-placeholder
+			input-placeholder-focus()
+		&:-ms-input-placeholder
+			input-placeholder-focus()
+			
+// Стилизация placeholder в input, END
+
+// Часто повторяющийся код
+box-shadow(){
+	box-shadow 0px 1px 2px rgba(0,0,0,.2) 
+}
+
+border-radius(){
+	border-radius 2px
+}
+
+reset-default-input-styles(){
+	background #FFF 
+	border none 
+}
+
+legend-positioning(){
+	margin-top 16px
+	margin-bottom 40px
+}
+// Часто повторяющийся код END
+
+// Вспомогательные классы для JS
+.display-none
+	display none  !important
+.display-block
+	display block !important
+.active-color
+	color black   !important
+.complete-color
+	color #ff9800 !important
+.invalid
+	border 1px solid #ff0000 !important
+.chosen
+	-webkit-box-shadow inset 0px 0px 0px 3px #ff9800 !important
+	-moz-box-shadow inset 0px 0px 0px 3px #ff9800 !important
+	box-shadow inset 0px 0px 0px 3px #ff9800 !important
+// Вспомогательные классы для JS END

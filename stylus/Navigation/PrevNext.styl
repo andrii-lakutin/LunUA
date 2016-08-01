@@ -1,0 +1,19 @@
+.PrevNext
+	margin 0 auto
+	width 300px
+	input
+		reset-default-input-styles()
+		box-shadow()
+		border-radius()
+		width 142px // 300(весь контейнер) - 16(margin) / 2(элемента)
+		height 40px 
+		color #ff9800
+		cursor pointer
+		outline none
+		&:nth-child(2)
+			float right
+	:last-child
+		display none 
+		color white
+		background #ff9800 
+		float right

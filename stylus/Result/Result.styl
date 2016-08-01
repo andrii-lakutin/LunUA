@@ -1,0 +1,57 @@
+.Result
+	overflow hidden
+	// display none	
+	.card
+		width 500px
+		height 195px
+		padding 25px
+		margin 150px auto
+		margin-bottom 32px  
+		background white
+		@media screen and (max-width: 675px)
+			transform rotate(-90deg) translateY(-110px)
+			margin 200px auto		
+		h1
+			font-size 20px
+			width 275px 
+			
+		p
+			color #6B6A6A
+			width 275px
+			word-wrap break-word
+			&:nth-child(3)                //mail
+				margin-top 5px
+				margin-bottom 30px  
+			&:nth-child(4)
+				margin-bottom 5px         //country,city
+		span
+			display inline-block          //social
+			vertical-align bottom
+			&:nth-of-type(2n+1)
+				color #5249CB
+		.table
+			height 80px 
+			display table-cell
+			vertical-align bottom	
+		.img
+			height 195px
+			width 200px 
+			float right
+			background-repeat no-repeat
+			background-size cover
+			   
+	input
+		reset-default-input-styles()
+		box-shadow()
+		border-radius()
+		width 142px 
+		height 40px
+		color white
+		background #ff9800
+		display block
+		cursor pointer
+		outline none 
+		margin 0 auto
+		margin-bottom 100px
+		@media screen and (max-width: 675px)
+			margin-top 200px   

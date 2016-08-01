@@ -1,0 +1,47 @@
+.Step2
+	width 300px
+	margin 0 auto
+	legend
+		legend-positioning()
+	select
+		box-shadow()
+		border-radius()
+		border none
+		width 100% 
+		padding 15px
+		color unactive
+		-webkit-appearance none
+		cursor pointer
+		outline none
+		&[name="country"]
+			margin-bottom 16px 
+		&[name="city"]
+			margin-bottom 150px 
+	.selectWrap
+		position relative
+		i
+			color #E3E3E3
+			position absolute
+			right 20px
+			top 20px 
+		.er
+			display none
+			position absolute
+			color #ff0000
+			width 400px
+			@media screen and (max-width: 1079px)
+				width 300px 
+		.errorCountry 
+			top 15px
+			right -420px
+			@media screen and (max-width: 1079px)
+				top 150px
+				right 0px 
+		.errorCity
+			top 15px
+			right -420px
+			@media screen and (max-width: 1079px)
+				top 83px 
+				right 0px
+		
+		  
